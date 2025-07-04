@@ -1,0 +1,36 @@
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.counter-btn-plus {
+    background-color: #5006B1;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #EDE9F2;
+}
+.counter-btn- {
+    background-color: #E2DAED;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #9385A6;
+}
+
+.counter-value {
+    background-color: #E2DAED;
+    font-size: 16px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    min-width: 20px;
+    text-align: center;
+    color: #9385A6;
+}

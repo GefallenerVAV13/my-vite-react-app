@@ -1,0 +1,52 @@
+.icon
+{
+    width: 40px;
+    height: 40px;
+    --icon-color: #5006B1; /*accent/main*/
+    stroke: #5006B1;
+    
+}
+
+.icon:hover
+{
+    --icon-color: #340473; /*accent/dark*/
+    stroke: #340473;
+}
+
+.logo
+{
+    width: 60px;
+    height: 60px;
+    stroke: #5006B1;
+    display: flex;
+    align-items: center;
+}
+
+.icon:active{
+    --icon-color:#580ABF;
+    stroke: #580ABF;/*accent/light*/
+}
+
+.btnNav{
+    background-color: #E2DAED;;
+    border: none;
+    padding: 16px 16px;
+    border-radius: 20px;
+}
+.btnNavFooter{
+    background-color: #E2DAED;;
+    border: none;
+    padding: 16px 16px;
+}
+.header{
+    background-color: #E2DAED;/*dom/dark*/
+    color: #E2DAED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}

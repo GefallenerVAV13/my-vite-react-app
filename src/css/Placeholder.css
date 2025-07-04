@@ -1,0 +1,51 @@
+.custom-input {
+  border: 1px solid #BEB4CC;
+  border-radius: 15px;
+  color: #BEB4CC;
+  background-color: #EDE9F2;
+  padding: 20px 24px;
+  width: 395px;
+  height: 64px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Placeholder */
+.custom-input::placeholder {
+  color: #BEB4CC;
+}
+
+.custom-input:hover::placeholder {
+  color: #9385A6;
+}
+
+.custom-input:focus {
+  outline-color: #69597D;
+  border-color: #69597D;
+  color: #000000;
+}
+
+.custom-input:focus::placeholder {
+  color: #5006B1;
+}
+.custom-input:not(:placeholder-shown) {
+  color: #69597D;
+}
+/* Стили для ошибки */
+.custom-input.invalid {
+  border-color: #8C052B;
+  color: #8C052B;
+}
+
+.custom-input.invalid::placeholder {
+  color: #8C052B;
+}
+
+.custom-input.success {
+  border-color: #048038;
+  color: #69597D;
+}
+
+.custom-input.success::placeholder {
+  color: #69597D;
+}
