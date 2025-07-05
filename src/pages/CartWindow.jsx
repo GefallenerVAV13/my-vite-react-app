@@ -15,34 +15,36 @@ const Cart = () => {
   return (
     <div className="cart-page">
       <div className="cart-container">
-        <div className="cart-items">
-          {cart.length === 0 ? (
-            <p>Корзина пуста</p>
-          ) : (
-            cart.map(item => (
-              <div key={item.id} className="cart-item" >
-                <img src={item.thumbnail} alt={item.title} className="cart-item-image" />
-                <div className="cart-item-details">
-                  <h4>{item.title}</h4>
-                  <p>Цена: {item.price}$</p>
-                  <p>Скидка: {item.discountPercentage}%</p>
-                  <SecondaryButton
-                  title="Удалить"
-                  onClick={() => updateQuantity(item.id, 0)}
-                  className="remove-button"
-                />
-                </div>
-                <div className="cart-item-actions">
-                  <Counter
-                    value={item.quantity}
-                    onIncrement={() => updateQuantity(item.id, item.quantity + 1)}
-                    onDecrement={() => updateQuantity(item.id, item.quantity - 1)}
+        <div className='cart'>
+          <div className="cart-items">
+            {cart.length === 0 ? (
+              <p>Корзина пуста</p>
+            ) : (
+              cart.map(item => (
+                <div key={item.id} className="cart-item" >
+                  <img src={item.thumbnail} alt={item.title} className="cart-item-image" />
+                  <div className="cart-item-details">
+                    <h4>{item.title}</h4>
+                    <p>Цена: {item.price}$</p>
+                    <p>Скидка: {item.discountPercentage}%</p>
+                    <SecondaryButton
+                    title="Удалить"
+                    onClick={() => updateQuantity(item.id, 0)}
+                    className="remove-button"
                   />
-                  <span className="cart-item-total">{item.discountedTotal}</span>
+                  </div>
+                  <div className="cart-item-actions">
+                    <Counter
+                      value={item.quantity}
+                      onIncrement={() => updateQuantity(item.id, item.quantity + 1)}
+                      onDecrement={() => updateQuantity(item.id, item.quantity - 1)}
+                    />
+                    <span className="cart-item-total">{item.discountedTotal}</span>
+                  </div>
                 </div>
-              </div>
-            ))
-          )}
+              ))
+            )}
+          </div>
         </div>
 
           <div className="cart-summary">

@@ -33,18 +33,18 @@ export const ProductItem = ({ item }) => {
         </div>
       </div>
       <div className='Item-info'>
-        <p><strong>{item.price}$</strong></p>
-        <div className='Item-Btn'>
-          {inCart ? (
-            <Counter  value={inCart.quantity}
-                      onIncrement={increment}
-                      onDecrement={decrement}/>
-
-          ) : (
-          <><MainButton title={<MoreIco className="icon-more" />} className={'btnNeutral-more'} /><MainButton title={"Добавить"} className={'btnNeutral'} onClick={handleAddToCart} /></>
-          )}
-        </div>
+  <p><strong>{item.price}$</strong></p>
+      <div className='Item-Btn'>
+        {inCart ? (
+          <Counter value={inCart.quantity} onIncrement={increment} onDecrement={decrement} />
+        ) : (
+          <>
+            <MainButton title={<MoreIco className="icon-more" />} className={'btnNeutral-more'} />
+            <MainButton title={"Добавить"} className={'btnNeutral'} onClick={handleAddToCart} />
+          </>
+        )}
       </div>
+    </div>
     </div>
   );
 };
