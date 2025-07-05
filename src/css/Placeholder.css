@@ -10,7 +10,6 @@
   transition: all 0.3s ease;
 }
 
-/* Placeholder */
 .custom-input::placeholder {
   color: #BEB4CC;
 }
@@ -31,7 +30,7 @@
 .custom-input:not(:placeholder-shown) {
   color: #69597D;
 }
-/* Стили для ошибки */
+
 .custom-input.invalid {
   border-color: #8C052B;
   color: #8C052B;

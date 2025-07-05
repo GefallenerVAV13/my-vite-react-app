@@ -33,17 +33,15 @@ export const ProductItem = ({ item }) => {
         </div>
       </div>
       <div className='Item-info'>
-        
         <p><strong>{item.price}$</strong></p>
         <div className='Item-Btn'>
           {inCart ? (
-          <div className="quantity-control">
             <Counter  value={inCart.quantity}
                       onIncrement={increment}
                       onDecrement={decrement}/>
-          </div>
+
           ) : (
-          <><MainButton title={<MoreIco className="icon-more" />} className={'btnNeutral-more'} /><MainButton title={"В корзину"} className={'btnNeutral'} onClick={handleAddToCart} /></>
+          <><MainButton title={<MoreIco className="icon-more" />} className={'btnNeutral-more'} /><MainButton title={"Добавить"} className={'btnNeutral'} onClick={handleAddToCart} /></>
           )}
         </div>
       </div>

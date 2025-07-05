@@ -1,86 +1,101 @@
-.btnAccent{
-    background-color: #5006B1;
-    border: none;
-    padding: 20px 30px;
-    border-radius: 10px;
-    align-items: center;
-
-    color: #F3F0F7;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+.btnAccent {
+  background-color: #5006B1;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: #F3F0F7;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.btnAccent:hover{
-    background-color: #340473;
+.btnAccent:hover {
+  background-color: #340473;
 }
 
-.btnAccent:active{
-    background-color: #580ABF;
+.btnAccent:active {
+  background-color: #580ABF;
 }
 
-.btnAccentLarge{
-    background-color: #5006B1;
-    border: none;
-    /* padding: 20px 40px; */
-    border-radius: 10px;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-
-    color: #F3F0F7;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 22px;
-    font-weight: 400;
+.btnAccentLarge {
+  background-color: #5006B1;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100%;
+  color: #F3F0F7;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.btnAccentLarge:hover{
-    background-color: #340473;
+.btnAccentLarge:hover {
+  background-color: #340473;
 }
 
-.btnAccentLarge:active{
-    background-color: #580ABF;
+.btnAccentLarge:active {
+  background-color: #580ABF;
 }
 
-.btnNeutral{
-    background-color: #E2DAED;
-    border: none;
-    align-items: center;
-    padding: 12px 40px;
-    border-radius: 10px;
-
-    color: #69597D;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-}
-.btnNeutral:hover{
-    background-color: #BEB4CC;
-}
-
-.btnNeutral:active{
-    background-color: #E8E1F2;
+.btnNeutral {
+  background-color: #E2DAED;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 10px;
+  color: #69597D;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 100px;
+  height: auto;
 }
 
-.btnNeutral-more{
-    background-color: #E2DAED;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 10px;
-    align-items: center;
-
-    display:flex;
-    color: #69597D;
-    line-height: 4px;
-    font-size: 12px;
-}
-.btnNeutral-more:hover{
-    background-color: #BEB4CC;
+.btnNeutral:hover {
+  background-color: #BEB4CC;
 }
 
-.btnNeutral-more:active{
-    background-color: #E8E1F2;
+.btnNeutral:active {
+  background-color: #E8E1F2;
+}
+
+.btnNeutral-more {
+  background-color: #E2DAED;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #69597D;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnNeutral-more:hover {
+  background-color: #BEB4CC;
+}
+
+.btnNeutral-more:active {
+  background-color: #E8E1F2;
+}
+
+.icon-more{
+    --icon-color: #69597D;
+    fill: #69597D;
+    stroke: #69597D;
 }

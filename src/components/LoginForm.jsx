@@ -9,8 +9,6 @@ export const LoginForm = () => {
     const formData = new FormData(e.target);
     const email = formData.get('email');
     const password = formData.get('password');
-
-    // Здесь можно отправить данные на сервер
     console.log('Email:', email);
     console.log('Password:', password);
 

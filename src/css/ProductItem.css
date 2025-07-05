@@ -41,11 +41,10 @@ img{
     height: 30px;
 }
 
-.Item-Btn{
-    display: flex;
-    justify-content: space-between;
-    padding: 12px;
-    gap: 2px;
+.Item-Btn {
+  display: flex;
+  gap: 8px;
+  align-items: center; 
 }
 
 .icon-more{

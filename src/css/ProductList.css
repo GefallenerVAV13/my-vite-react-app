@@ -13,10 +13,10 @@
 .container {
     background-color: #E2DAED;
     border-radius: 20px;
-    max-width: 1228px; /* Ограничение ширины */
-    margin: 0 auto;   /* Центрирует блок по горизонтали */
+    max-width: 1228px; 
+    margin: 0 auto;   
     margin-top: 150px;
     margin-bottom: 150px;
-    padding: 30px 20px;  /* Небольшие отступы слева и справа */
+    padding: 30px 20px;  
     gap: 50px;
 }
