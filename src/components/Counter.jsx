@@ -1,21 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Counter = ({ count = 1, readOnly = false }) => {
-  const [quantity, setQuantity] = useState(count);
-
-  const handleIncrement = () => {
-    if (!readOnly) setQuantity(prev => prev + 1);
-  };
-
-  const handleDecrement = () => {
-    if (!readOnly && quantity > 1) setQuantity(prev => prev - 1);
-  };
-
+const Counter = ({ value = 1, onIncrement, onDecrement, readOnly = false }) => {
   return (
     <div className="counter">
-      <button className="counter-btn-" onClick={handleDecrement}>-</button>
-      <span className="counter-value">{quantity}</span>
-      <button className="counter-btn-plus" onClick={handleIncrement}>+</button>
+      <button
+        className="counter-btn-minus"
+        onClick={onDecrement}
+        disabled={readOnly || value <= 1}
+      >
+        -
+      </button>
+      <span className="counter-value">{value}</span>
+      <button
+        className="counter-btn-plus"
+        onClick={onIncrement}
+        disabled={readOnly}
+      >
+        +
+      </button>
     </div>
   );
 };

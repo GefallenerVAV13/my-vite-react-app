@@ -5,21 +5,9 @@ import { MainButton } from '../components/MainButton';
 import { ProductItem } from '../components/ProductItem';
 import { ProductList } from '../components/ProductList';
 import { Placeholder } from '../components/Placeholder';
-import { ProductListContainer } from '../components/ProductListContainer';
+import { ProductListContainer } from '../context/ProductListContainer';
 
 const Main = () => {
-  // const products = [
-  //   'Product 1',
-  //   'Product 2',
-  //   'Product 3',
-  //   'Product 4',
-  //   'Product 5',
-  //   'Product 6',
-  //   'Product 7',
-  //   'Product 8',
-  //   'Product 9',
-  //   'Product 10'
-  // ];
 
   return (
     <div className="body">

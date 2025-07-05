@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { MainButton } from './MainButton';
 import MoreIco from '../assets/more.svg?react';
+import { CartContext } from '../context/CartContext';
+import Counter from './Counter';
 
 export const ProductItem = ({ item }) => {
+
+  const { cart, addToCart, updateQuantity } = useContext(CartContext);
+
+  const inCart = cart.find(product => product.id === item.id);
+
+  const handleAddToCart = () => {
+    addToCart(item);
+  };
+
+  const increment = () => {
+    updateQuantity(item.id, inCart.quantity + 1);
+  };
+
+  const decrement = () => {
+    updateQuantity(item.id, inCart.quantity - 1);
+  };
+
   return (
     <div className='Product-block'>
       <div className='Item-card'>
@@ -17,8 +36,15 @@ export const ProductItem = ({ item }) => {
         
         <p><strong>{item.price}$</strong></p>
         <div className='Item-Btn'>
-          <MainButton title={<MoreIco className="icon-more"/>} className={'btnNeutral-more'}/>
-          <MainButton title={"Купить"} className={'btnNeutral'}/>
+          {inCart ? (
+          <div className="quantity-control">
+            <Counter  value={inCart.quantity}
+                      onIncrement={increment}
+                      onDecrement={decrement}/>
+          </div>
+          ) : (
+          <><MainButton title={<MoreIco className="icon-more" />} className={'btnNeutral-more'} /><MainButton title={"В корзину"} className={'btnNeutral'} onClick={handleAddToCart} /></>
+          )}
         </div>
       </div>
     </div>
